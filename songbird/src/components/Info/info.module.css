@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 20px 0;
+}
+.image {
+  width: 200px;
+  min-width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  user-select: none;
+
+  object-fit: cover;
+}
+.title {
+  margin: 0 auto;
+}
+.wrapper h3 {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.wrapper h4 {
+  margin: 0 0 20px;
+  text-align: center;
+  color: #999999;
+}
+.wrapper p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.init {
+  margin-top: 30px;
+  text-align: center;
+}

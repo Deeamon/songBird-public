@@ -1,0 +1,79 @@
+
+.mainInfo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  left: 50%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+}
+.mainInfo h2 {
+  margin: 0;
+}
+.mainInfo h2 span {
+  color: #5d9cf0;
+}
+.score {
+  margin: 0;
+  font-size: 18px;
+  color: #5d9cf0;
+}
+.list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 50px;
+  padding: 0;
+  list-style: none;
+}
+.list::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  height: 1px;
+  background-color: #dddddd;
+}
+.item {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #666666;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+}
+.itemActive {
+  color: #ffffff;
+  background-color: #5d9cf0;
+}
+.item span {
+  position: absolute;
+  bottom: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 12px;
+  text-align: center;
+  color: #777777;
+}
+@media all and (max-width: 450px) {
+  .item span {
+    display: none;
+  }
+}
